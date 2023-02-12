@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(198, 34%, 79%);
+
+  header {
+    display: flex;
+    background-color: black;
+
+    .title {
+      font-size: 48px;
+      margin: 32px;
+      padding: 16px;
+      text-align: center;
+      background-color: rgb(149, 140, 141);
+      border-radius: 16px;
+      
+
+      .me {
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 32px;
+        transition: border-radius 1s;
+        &:hover {
+          border-radius: 0%;
+        }
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .myself {
+      font-size: 32px;
+      margin: 32px;
+      margin-left: auto;
+      text-align: center;
+      background-color: rgb(178, 238, 169);
+      border-radius: 16px;
+    }
+    .hobbies {
+      border-top: 2px solid black;
+    }
+  }
+
+  main {
+    margin-top: 16px;
+     .aboutme {
+      font-size: 32px;
+      text-align: justify;
+
+      span {
+        padding: 8px;
+        margin: 16px;
+        border: 2px solid black;
+        border-radius: 4px;
+      }
+      .past {
+        font-size: 32px;
+        margin: 24px 24px;
+        padding: 16px;
+        text-align: center;
+        background-image: url(/Users/matsunagayuuonore/Desktop/mylife/IMG_7460.JPG);
+        background-image: ("貴様の画像.jpg");
+        background-color: rgba(255, 255, 255, 0.6);
+        background-blend-mode: lighten;
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        border-radius: 32px;
+        box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.177);
+        opacity: 0.3;
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+      .now {
+        font-size: 32px;
+        margin: 24px 24px;
+        padding: 16px;
+        text-align: center;
+        background-image: url(/Users/matsunagayuuonore/Desktop/mylife/IMG_7461.JPG);
+        background-image: ("貴様の画像.jpg");
+        background-color: rgba(255, 255, 255, 0.6);
+        background-blend-mode: lighten;
+        background-size: cover;
+        background-position: 0%;
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        border-radius: 32px;
+        box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.177);
+        opacity: 0.3;
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+      .future {
+        font-size: 32px;
+        margin: 24px 24px;
+        padding: 16px;
+        text-align: center;
+        background-image: url(/Users/matsunagayuuonore/Desktop/mylife/IMG_4511.jpg);
+        background-image: ("貴様の画像.jpg");
+        background-color: rgba(255, 255, 255, 0.6);
+        background-blend-mode: lighten;
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        border-radius: 32px;
+        box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.177);
+        opacity: 0.3;
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .study {
+      font-size: 32px;
+      margin: 16px;
+      text-align: center;
+      margin-top: 16px;
+      background-color: rgba(169, 219, 194, 0.6);
+      border: 1px solid black;
+      padding: 64px;
+      opacity: 0.3;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+  footer {
+    background-color: rgba(20, 15, 15, 0.075);
+    padding: 16px;
+    
+
+    ul{
+      list-style: none;
+      display: flex;
+
+      li{
+        height: 120px;
+        width: 200px;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 32px;
+        box-shadow: 8px 8px 4px;
+        animation: slide 2s infinite alternate;
+
+        &:hover{
+          opacity: 0.8;
+        }
+        a{
+          display: flex;
+          margin: 0 auto;
+          align-items: center;
+          text-decoration: none;
+          color: black;
+        }
+
+         +li{
+          margin-left: 36px;
+         }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+ body header {
+    display: block;
+
+    .myself {
+      margin: 0 32px;
+    }
+  }
+}
+
+@keyframes slide {
+  100%{
+    transform: translateX(16px);
+  }
+}
